@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Fast API Demo{% endblock %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block page_content %}
+    {% include "include/sidebar.html" %}
+    <h1> Welcome to Fast API Demo</h1>
+    {{data.text|safe}}
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+{% endblock %}
